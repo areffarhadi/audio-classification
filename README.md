@@ -1,4 +1,4 @@
-# Wav2vec2 and Whisper models for audio classification
+# Wav2vec2, Whisper, ResNet293 and AST models for audio classification
 
 In this repo, we prepare the code to fine-tune four models for audio classification, which could be used in different scenarios, such as speaker identification, language recognition, emotion recognition, sentiment analysis, speaking-style recognition, speech/non-speech classification, and more.
 
