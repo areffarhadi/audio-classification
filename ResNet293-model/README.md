@@ -4,8 +4,10 @@ Using this script, we can implement several scenarios in audio classification, s
 
 #To fine-tune and test ResNet293 model:
 1. download the pretrained model from the link we presented above.
-2. make manifest using `[wav_manifest.py](https://github.com/areffarhadi/audio-classification/blob/main/ResNet293-model/manifest_voice.py)'
-The manifest for feeding wav data must be like [train_voice_emotion.csv](https://github.com/areffarhadi/Wav2vec2_audio_classification/blob/main/train_voice_emotion.csv) file.
+2. make manifest using [wav_manifest.py](https://github.com/areffarhadi/audio-classification/blob/main/ResNet293-model/manifest_voice.py) and repeat it for all train, valid and test sets.
+3. in the `conf/resnet293_4.yaml` update the pathes to the manifests and directory of pretrained model
+4. fine tune the model by running [](https://github.com/areffarhadi/audio-classification/blob/main/ResNet293-model/fine_tuning_frozen_Resnet293.py)
+5. finally test the model using 
 
 
 
