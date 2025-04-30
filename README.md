@@ -12,6 +12,7 @@ Wav2Vec2: good performance in audio classification
 
 AST: originally for audio event classification
 
+* For some scenarios, utilizing all four models in a multi-model structure would be helpful!
 
   ## to do list for Whisper and Wav2vec2 models:
 
