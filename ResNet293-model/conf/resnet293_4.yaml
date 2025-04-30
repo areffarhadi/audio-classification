@@ -1,0 +1,34 @@
+n_mels: 80
+featCal: !new:modules.feat.logFbankCal
+  sample_rate: 16000
+  n_fft: 512
+  win_length: 0.025
+  hop_length: 0.01
+  n_mels: !ref <n_mels>
+norm_type: 'max'
+embd_dim: 256
+model: !new:modules.model_spk.ResNet293_based
+  in_planes: 64
+  block_type: 'SimAM' 
+  pooling_layer: 'ASP' 
+  embd_dim: !ref <embd_dim>
+  acoustic_dim: !ref <n_mels>
+  featCal: !ref <featCal>
+ckpt_path: './cpk/model_ft.pt'
+val_name: './voice_res293_ident'
+batch_size: 8
+num_workers: 4
+base_lr: 0.001
+lr_batches: 1000
+lr_epochs: 10
+warmup_batches: 100
+train_manifest: "wav_manifest_train.csv" #"train_manifest_1445.csv"
+valid_manifest: "wav_manifest_dev2.csv" #"test_manifest_1445.csv"
+project_name: "speaker_finetuning"
+exp_name: "resnet293_finetune"
+exp_dir: "./voice_res293_ident"
+use_fp16: true
+num_epochs: 7
+num_speakers: 1445
+log_interval: 50
+max_duration: 20.0  # Maximum audio duration in seconds
