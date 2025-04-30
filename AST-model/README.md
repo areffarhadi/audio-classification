@@ -4,7 +4,7 @@ Using this script, we can implement several scenarios in audio classification, s
 We fine-tuned this model for `speech/non-speech` segment recognition. The fine-tuned model is available [here](https://drive.google.com/file/d/1tIoexZMWJzBr3LbTK8YX1G8RDZCVwbRt/view?usp=sharing). To use this model, follow the test section of the description below.
 
 # To fine-tune and test AST model:
-1. download the pretrained model [here](https://uc95c60a4f86325fdc8d924d7168.dl.dropboxusercontent.com/cd/0/get/CozkuV-XdClvvDV6bmkgQx1DDQywP89ZDw4K2nXsYAid9uzHqrUKE99ze6LMh6w4_0KX_oiuz0GB0cgVWcYB6rdOF2lIKUNEGgNJeCleGEy3KdJHeTDlExfXRvaAi00tbmJ6cDtAUt3kj5AipLD9zI50/file?dl=1#)
+1. download the pretrained model [here](https://www.dropbox.com/s/ca0b1v2nlxzyeb4/audioset_10_10_0.4593.pth?dl=1)
 2. making manifests using []() for wav files and []() for mp4 files.
 3. fine-tune the model using []() by editing the script to set the manifests and pre-trained model addresses before running!
 4. inference the model using []() and see the result in the output CSV file.
