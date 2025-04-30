@@ -1,4 +1,14 @@
 # Wav2vec2 and Whisper models for audio classification
+
+In this repo, we prepare the code to fine-tune four models for audio classification, which could be used in different scenarios, such as speaker identification, language recognition, emotion recognition, sentiment analysis, speaking-style recognition, speech/non-speech classification, and more.
+
+These four models have good performance in their fields. 
+Whisper: originally for ASR
+ResNet293: originally for speaker recognition
+Wav2Vec2: good performance in audio classification
+AST: originally for audio event classification
+
+
 Using this script, we can implement several scenarios in audio classification, such as speaker identification, language recognition, emotion recognition, sentiment analysis and more, using Wav2vec2 and Whisper models. 
 
 For fine-tuning the [Whisper](https://github.com/openai/whisper) model for audio classification: [Whisper_Emotion.py](https://github.com/areffarhadi/Wav2vec2_audio_classification/blob/main/Whisper_Emotion.py) <be>
