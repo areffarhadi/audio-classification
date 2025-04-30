@@ -1,4 +1,4 @@
-## Wav2vec2, Whisper, ResNet293 and AST models for audio classification
+# Wav2vec2, Whisper, ResNet293 and AST models for audio classification
 
 In this repo, we prepare the code to fine-tune four models for audio classification, which could be used in different scenarios, such as speaker identification, language recognition, emotion recognition, sentiment analysis, speaking-style recognition, speech/non-speech classification, and more.
 
@@ -13,7 +13,7 @@ Wav2Vec2: good performance in audio classification
 AST: originally for audio event classification
 
 
-  # to do list for Whisper and Wav2vec2 models:
+  ## to do list for Whisper and Wav2vec2 models:
 
 1. The manifest for feeding wav data must be like [train_voice_emotion.csv](https://github.com/areffarhadi/Wav2vec2_audio_classification/blob/main/train_voice_emotion.csv) file.
 
@@ -28,7 +28,7 @@ in addition we have [wav2vec_Emotion_specaugm.py](https://github.com/areffarhadi
 Please use [slurm_run.sh](https://github.com/areffarhadi/Wav2vec2_audio_classification/blob/main/slurm_run.sh) to run the scripts with Slurm.
 
 
-# to do list for AST and ResNet293
+## to do list for AST and ResNet293
 
 For each one of these models, we prepared a separate folder, and their fine-tuning and test structures are in there:
 for [AST](https://github.com/areffarhadi/audio-classification/tree/main/AST-model)
