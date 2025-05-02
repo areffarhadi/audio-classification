@@ -33,7 +33,7 @@ Please use [slurm_run.sh](https://github.com/areffarhadi/Wav2vec2_audio_classifi
 
 For each one of these models, we prepared a separate folder, and their fine-tuning and test structures are in there:
 
-for [AST](https://github.com/areffarhadi/audio-classification/tree/main/AST-model)
+* for [AST](https://github.com/areffarhadi/audio-classification/tree/main/AST-model)
 
-for [ResNet293](https://github.com/areffarhadi/audio-classification/tree/main/ResNet293-model)
+* for [ResNet293](https://github.com/areffarhadi/audio-classification/tree/main/ResNet293-model)
 
